@@ -11,7 +11,7 @@ export default function Home({ searchParams }: SearchParamProps) {
       {isAdmin && <PasskeyModal />}
 
 
-      <section className="remove-scrollbar container my-auto">
+      <section className="remove-scrollbar container">
         <div className="sub-container max-w-[496px]">
           <Image
             src="/assets/icons/life-care.svg"
@@ -24,7 +24,7 @@ export default function Home({ searchParams }: SearchParamProps) {
           <PatientForm />
 
           <div className="text-14-regular mt-20 flex justify-between">
-            <p className="justify-items-end text-dark-600 xl:text-left">
+            <p className="copyright md:mb-10">
               &copy; 2024 LifeCare
             </p>
             <Link href="/?admin=true" className="text-green-500">
